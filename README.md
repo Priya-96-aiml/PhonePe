@@ -38,50 +38,76 @@ Technical Highlights
 ✅ Modular Design: Separated ETL, SQL, frontend, testing modules.
 
 🏗️ Project Structure
+
 bash
+
 Copy
+
 Edit
+
 project/
+
 ├── config/                   # DB connection config
+
 ├── sql/                      # schema.sql, schema_only.sql
+
 ├── src/                      # data_extraction.py, streamlit_app.py
+
 ├── tests/                    # Pytest unit tests
+
 ├── docs/                     # user_guide.md, technical_documentation.md
+
 ├── presentation/             # slides
+
 ├── data/                     # SQLite DB, processed data
+
 ├── requirements.txt          # Python dependencies
+
 ├── run_analysis.py           # Launch script
+
 🚀 Getting Started in Google Colab
+
 Step 1: Upload the ZIP
+
 python
 Copy
 Edit
+
 from google.colab import files
 uploaded = files.upload()
+
 Step 2: Extract and Setup
+
 python
 Copy
 Edit
+
 import zipfile
 zip_path = "project2_PhonePe.zip"
 with zipfile.ZipFile(zip_path, 'r') as zip_ref:
     zip_ref.extractall("/content/project")
+    
 Step 3: Install Dependencies
 bash
 Copy
 Edit
+
 pip install -r /content/project/requirements.txt
+
 Step 4: Run Streamlit
 bash
 Copy
 Edit
 !streamlit run /content/project/src/streamlit_app.py
+
 Step 5: Create Tunnel (Optional)
 bash
 Copy
 Edit
+
 !npm install -g localtunnel
 !lt --port 8501 --subdomain phonepedashboard123
+
 📈 Dashboard Sections
 Overview: Total transactions, value, payment types.
 
