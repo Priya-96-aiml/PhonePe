@@ -1,4 +1,4 @@
-@ https://bright-klepon-247598.netlify.app/
+
 📊 Project Name: PhonePe Transaction Insights Dashboard
 The PhonePe Transaction Insights Dashboard is a full-stack data analytics and engineering project aimed at extracting, transforming, analyzing, and visualizing nationwide digital payment trends using the open-source data from PhonePe Pulse. The dashboard offers real-time insights into transaction types, user behavior, and regional digital payment adoption across India.
 
@@ -65,6 +65,8 @@ project/
 ├── requirements.txt          # Python dependencies
 
 ├── run_analysis.py           # Launch script
+
+@ https://bright-klepon-247598.netlify.app/
 
 🚀 Getting Started in Google Colab
 
